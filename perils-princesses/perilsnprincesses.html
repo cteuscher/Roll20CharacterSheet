@@ -1,0 +1,106 @@
+<div class="perilsnprincesses-logo">
+    <h1><img src="images\pnp-logo.png" width="350" length="110" /></h1>
+<div class="sheet-box">
+    <div class="sheet-biocol" style="width: 55%;">
+        <div class="sheet-startcol" style="width: 20%;">
+            <img src="images\label-character_name.png" width="100" height="30" alt=""/> 
+        </div>
+        <div class="sheet-col" style="width: 60%;">
+                 <input type="text" name="attr_character_name">
+        </div>
+        <br>
+        <div class="sheet-startcol" style="width: 20%;">
+            <img src="images\label-character_pronouns.png" width="100" height="30" alt=""/>
+        </div>
+        <div class="sheet-col" style="width: 60%;">
+                    <input type="text" name="attr_character_pronoun">
+        </div>
+        <br>
+        <div class="sheet-startcol" style="width: 20%;">
+            <img src="images\label-character_fairy_godmother.png" width="100" height="30" alt=""/>
+        </div>
+        <div class="sheet-col" style="width: 60%;">
+                    <input type="text" name="attr_character_fairy_godmother">
+        </div>
+        <br>
+        <div class="sheet-startcol" style="width: 20%;">
+            <img src="images\label-armor.png" width="100" height="30" alt=""/>
+        </div>
+        <div class="sheet-col" style="width: 60%;">
+                    <input type="text" name="attr_character_armor">
+        </div>
+        <br>
+        <div class="sheet-startcol" style="width: 20%;">
+            <img src="images\label-heart_point_max.png" width="100" height="30" alt=""/>
+        </div>
+        <div class="sheet-col" style="width: 60%;">
+                    <input type="text" name="attr_character_heart_point_max">
+        </div>
+        <br>
+        <div class="sheet-startcol" style="width: 20%;">
+            <img src="images\label-heart_point_current.png" width="100" height="30" alt=""/>
+        </div>
+        <div class="sheet-col" style="width: 60%;">
+                    <input type="text" name="attr_character_heart_point_current">
+        </div>
+        <br>
+        <div class="sheet-startcol" style="width: 20%;">
+            <img src="images\label-heart_dice.png" width="100" height="30" alt=""/>
+        </div>
+        <div class="sheet-col" style="width: 60%;"><span style="margin-left: 0%;">
+            </span>
+            <input type="checkbox" name="attr_token1" value="1">
+            <input type="checkbox" name="attr_token2" value="1">
+            <input type="checkbox" name="attr_token3" value="1">	
+            <input type="checkbox" name="attr_token4" value="1">
+            <button type="roll" value="[[1d4]]">Roll Heart Dice</button>
+        </div>
+    </div>
+    <div class="sheet-col" style="width: 35%;">
+        <div class="sheet-col" style="width: 42%;">
+            <div class="sheet-startcol" style="width: 22%;"><img src="images\label-resolve.png" width="100" height="30" alt=""/>
+            </div>
+	        <div class="sheet-col" style="width: 50%;">
+		        <input class="sheet-attrnum" type="number" name="attr_resolve">
+		        <button type="roll" value="**@{character_name}** rolls [[1d20]] vs @{character_pronoun} resolve of @{resolve}">Roll Resolve</button>
+            </div>
+            <div class="sheet-startcol" style="width: 22%;"><img src="images\label-grace.png" width="100" height="30" alt=""/>
+            </div>
+	        <div class="sheet-col" style="width: 50%;">
+		        <input class="sheet-attrnum" type="number" name="attr_grace">
+		        <button type="roll" value="**@{character_name}** rolls [[1d20]] vs @{character_pronoun} grace of @{grace}">Roll Grace</button>
+            </div>
+            <div class="sheet-startcol" style="width: 22%;"><img src="images\label-wits.png" width="100" height="30" alt=""/>
+            </div>
+	        <div class="sheet-col" style="width: 50%;">
+		        <input class="sheet-attrnum" type="number" name="attr_wits">
+		        <button type="roll" value="**@{character_name}** rolls [[1d20]] vs @{character_pronoun} wits of @{wits}">Roll Wits</button>
+            </div>
+            <div class="sheet-startcol" style="width: 22%;"><img src="images\label-weapon.png" width="100" height="30" alt=""/>
+            </div>
+	        <div class="sheet-col" style="width: 50%;">
+		        <input class="sheet-attrnum" type="text" name="attr_weeapon_name1">
+                <input class="sheet-attrnum" type="text" name="attr_weeapon_die1">
+		        <button type="roll" value="[[@{weeapon_die1}]]">Roll Damage</button>
+            </div>
+            <div class="sheet-startcol" style="width: 22%;"><img src="images\label-weapon.png" width="100" height="30" alt=""/>
+            </div>
+            <div class="sheet-col" style="width: 50%;">
+		        <input class="sheet-attrnum" type="text" name="attr_weeapon_name2">
+                <input class="sheet-attrnum" type="text" name="attr_weeapon_die2">
+		        <button type="roll" value="[[@{weeapon_die2}]]">Roll Damage</button>
+            </div>
+            <div class="sheet-startcol" style="width: 22%;"><img src="images\label-weapon.png" width="100" height="30" alt=""/>
+            </div>
+            <div class="sheet-col" style="width: 50%;">
+		        <input class="sheet-attrnum" type="text" name="attr_weeapon_name3">
+                <input class="sheet-attrnum" type="text" name="attr_weeapon_die3">
+		        <button type="roll" value="[[@{weeapon_die3}]]">Roll Damage</button>
+            </div>
+            <div class="sheet-startcol" style="width: 22%;"><img src="images\label-weapon.png" width="100" height="30" alt=""/>
+            </div>
+            <div class="sheet-col" style="width: 50%;">
+		        <input class="sheet-attrnum" type="text" name="attr_weeapon_name4">
+                <input class="sheet-attrnum" type="text" name="attr_weeapon_die4">
+		        <button type="roll" value="[[@{weeapon_die4}]]">Roll Damage</button>
+            </div>
