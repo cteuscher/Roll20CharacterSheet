@@ -1,0 +1,339 @@
+<div class="slayers-logo">
+    <h1><img src="https://raw.githubusercontent.com/cteuscher/Roll20CharacterSheet/main/slayers/images/slayers-logo.png"></h1>
+<!--    First Sheetbox  -->
+    
+    <div class="sheet-box">
+
+        <!--    name style hp speed  -->
+
+        <div class="name-class-container">
+            <div class="sheet-character-name">
+                <input type="text" name="attr_character_name" placeholder="Name">
+            </div>
+            <div class="sheet-character-class">
+                <select name="attr_character_class" placeholder="Class">
+                    <option>Blade</option>
+                    <option>Gunslinger</option>
+                    <option>Arcanist</option>
+                    <option>Tactician</option>
+                </select>
+            </div>
+            <div class="sheet-character-hp">
+                <span class="character_inputs">
+                    <input type="text" name="attr_character_currhp" placeholder="HP" id="character_currhp">
+                    <input type="text" name="attr_character_maxhp" placeholder="HP" id="character_maxhp">
+                </span>
+            </div>
+            <div class="sheet-character-speeddie">
+                <select name="attr_character_speeddie" id="character_speeddie">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Speed}} {{attack=[[@{character_speeddie} &{tracker}]]}} "></button>
+            </div>
+        </div>
+
+        <!--    skills  -->
+
+        <div class="char-skills-container">
+            <div class="sheet-character-skillagile">
+                <select name="attr_character_skillagile" id="character_skillagile">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Agile}} {{attack=[[@{character_skillagile}]]}}"></button>
+            </div>
+            <div class="sheet-character-skillbrawn">
+                <select name="attr_character_skillbrawn" id="character_skillbrawn">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Brawn}} {{attack=[[@{character_skillbrawn}]]}}"></button>
+            </div>
+            <div class="sheet-character-skilldeceive">
+                <select name="attr_character_skilldeceive" id="character_skilldeceive">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Deceive}} {{attack=[[@{character_skilldeceive}]]}}"></button>
+            </div>
+            <div class="sheet-character-skillhunt">
+                <select name="attr_character_skillhunt" id="character_skillhunt">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Hunt}} {{attack=[[@{character_skillhunt}]]}}"></button>
+            </div>
+            <div class="sheet-character-skillmend">
+                <select name="attr_character_skillmend" id="character_skillmend">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Mend}} {{attack=[[@{character_skillmend}]]}}"></button>
+            </div>
+            <div class="sheet-character-skillnegotiate">
+                <select name="attr_character_skillnegotiate" id="character_skillnegotiate">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Negotiate}} {{attack=[[@{character_skillnegotiate}]]}}"></button>
+            </div>
+            <div class="sheet-character-skillstealth">
+                <select name="attr_character_skillstealth" id="character_skillstealth">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Stealth}} {{attack=[[@{character_skillstealth}]]}}"></button>
+            </div>
+            <div class="sheet-character-skillstreets">
+                <select name="attr_character_skillstreets" id="character_skillstreets">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Streets}} {{attack=[[@{character_skillstreets}]]}}"></button>
+            </div>
+            <div class="sheet-character-skillstudy">
+                <select name="attr_character_skillstudy" id="character_skillstudy">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Study}} {{attack=[[@{character_skillstudy}]]}}"></button>
+            </div>
+            <div class="sheet-character-skilltactics">
+                <select name="attr_character_skilltactics" id="character_skilltactics">
+                    <option value="d6">d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                </select>
+                <button type="roll" value="&{template:default} {{name=Tactics}} {{attack=[[@{character_skilltactics}]]}}"></button>
+            </div>
+        </div>
+
+        <!-- actions  adv  -->
+        <div class="char-actions-container">
+            <div class="sheet-character-readyaction">
+                <textarea name="attr_readyaction-text" id="readyaction-text"></textarea>
+            </div>
+            <div class="sheet-character-quickaction">
+                <textarea name="attr_quickaction-text" id="quickaction-text"></textarea>
+            </div>
+            <div class="sheet-character-attackaction">
+                <textarea name="attr_attackaction-text" id="attackaction-text"></textarea>
+            </div>
+            <div class="sheet-character-basicadv">
+                <textarea name="attr_basicadv-text" id="basicadv-text"></textarea>
+            </div>
+            <div class="sheet-character-expertadv">
+                <textarea name="attr_expertadv-text" id="expertadv-text"></textarea>
+            </div>
+        </div>
+    </div> 
+
+    <!--    sheet box 2     -->
+    <div class="sheet-box">
+
+        <!--    classes     -->
+        
+        <div class="char-classes-container">
+            <div class="blade-class-banner">
+                <h3><img src="https://raw.githubusercontent.com/cteuscher/Roll20CharacterSheet/main/slayers/images/label-classblade.png"></h3> 
+            </div>
+            <div class="blade-class-container">
+                <div class="blade-weapon-dice">
+                    <select name="attr_character_bladeweapondice">
+                        <option value="d6">d6</option>
+                        <option value="d8">d8</option> 
+                        <option value="d10">d10</option>
+                    </select>
+                    <button type="roll" value="&{template:default} {{name=Attack}} {{attack=[[@{character_bladeweapondice}]]}} {{Damage=@{blade_weapon_damage}}}"></button>
+                </div>
+                <div class="blade-weapon-damage">
+                    <input type="number" min="1" max="10" name="attr_blade_weapon_damage">
+                </div>
+            </div>
+            <div class="tactician-class-banner">
+                <h3><img src="https://raw.githubusercontent.com/cteuscher/Roll20CharacterSheet/main/slayers/images/label-classtactician.png"></h3> 
+            </div>
+            <div class="tactician-class-container">
+                <div class="tactician-class-stratpool">
+                    <textarea name="attr_tacticianaction_text" id="tacticianaction-text"></textarea>
+                </div>
+                <div class="tactician-class-action">
+                </div>
+                <div class="tactician-class-damage-container">
+                    <div class="tactician-weapon-die">
+                        <select name="attr_character_tacticianweapondice">
+                            <option value="d6">d6</option>
+                            <option value="d8">d8</option> 
+                            <option value="d10">d10</option>
+                        </select>
+                        <button type="roll" value="&{template:default} {{name=Attack}} {{attack=[[@{character_tacticianweapondice}]]}} {{Damage=@{character_tactician_weapon_damage}}}"></button>
+                    </div>
+                    <div class="tactician-weapon-damage">
+                        <input type="number" min="1" max="10" name="attr_character_tactician_weapon_damage">
+                    </div>
+                </div>
+            </div>
+            <div class="gunslinger-class-banner">
+                <h3><img src="https://raw.githubusercontent.com/cteuscher/Roll20CharacterSheet/main/slayers/images/label-classgunslinger.png"></h3> 
+            </div>
+            <div class="gunslinger-class-container">
+                <div class="gunslinger-class-runestext">
+                    <input type="text" name="attr_character_gunslinger_rune1">
+                    <input type="checkbox" name="attr_character_gunslinger_rune1loaded">
+                    <input type="text" name="attr_character_gunslinger_rune2">
+                    <input type="checkbox" name="attr_character_gunslinger_rune2loaded">
+                    <input type="text" name="attr_character_gunslinger_rune3">
+                    <input type="checkbox" name="attr_character_gunslinger_rune3loaded">
+                    <input type="text" name="attr_character_gunslinger_rune4">
+                    <input type="checkbox" name="attr_character_gunslinger_rune4loaded">
+                    <input type="text" name="attr_character_gunslinger_rune5">
+                    <input type="checkbox" name="attr_character_gunslinger_rune5loaded">
+                    <input type="text" name="attr_character_gunslinger_rune6">
+                    <input type="checkbox" name="attr_character_gunslinger_rune6loaded">
+                </div>
+                <div class="gunslinger-class-runesdiceroll">
+                    <select name="attr_character_gunslinger_runedice1" id="attr_character_gunslinger_runedice1">
+                        <option value="d4">d4</option>
+                        <option value="d6">d6</option>
+                        <option value="d8">d8</option>
+                        <option value="d10">d10</option>
+                    </select>
+                    <input type="number" min="1" max="10" name="attr_character_gunslinger_weapon_damage1">
+                    <button type="roll" value="&{template:default} {{name=Attack}} {{attack=[[@{character_gunslinger_runedice1}]]}} {{name=@{character_gunslinger_rune1}}} {{Damage=@{character_gunslinger_weapon_damage1}}}"></button>
+
+                    <select name="attr_character_gunslinger_runedice2" id="attr_character_gunslinger_runedice2">
+                        <option value="d4">d4</option>
+                        <option value="d6">d6</option>
+                        <option value="d8">d8</option>
+                        <option value="d10">d10</option>
+                    </select>
+                    <input type="number" min="1" max="10" name="attr_character_gunslinger_weapon_damage2">
+                    <button type="roll" value="&{template:default} {{name=Attack}} {{attack=[[@{character_gunslinger_runedice2}]]}} {{name=@{character_gunslinger_rune2}}} {{Damage=@{character_gunslinger_weapon_damage2}}}"></button>
+
+                    <select name="attr_character_gunslinger_runedice3" id="attr_character_gunslinger_runedice3">
+                        <option value="d4">d4</option>
+                        <option value="d6">d6</option>
+                        <option value="d8">d8</option>
+                        <option value="d10">d10</option>
+                    </select>
+                    <input type="number" min="1" max="10" name="attr_character_gunslinger_weapon_damage3">
+                    <button type="roll" value="&{template:default} {{name=Attack}} {{attack=[[@{character_gunslinger_runedice3}]]}} {{name=@{character_gunslinger_rune3}}} {{Damage=@{character_gunslinger_weapon_damage3}}}"></button>
+
+                    <select name="attr_character_gunslinger_runedice4" id="attr_character_gunslinger_runedice4">
+                        <option value="d4">d4</option>
+                        <option value="d6">d6</option>
+                        <option value="d8">d8</option>
+                        <option value="d10">d10</option>
+                    </select>
+                    <input type="number" min="1" max="10" name="attr_character_gunslinger_weapon_damage4">
+                    <button type="roll" value="&{template:default} {{name=Attack}} {{attack=[[@{character_gunslinger_runedice4}]]}} {{name=@{character_gunslinger_rune4}}} {{Damage=@{character_gunslinger_weapon_damage4}}}"></button>
+
+                    <select name="attr_character_gunslinger_runedice5" id="attr_character_gunslinger_runedice5">
+                        <option value="d4">d4</option>
+                        <option value="d6">d6</option>
+                        <option value="d8">d8</option>
+                        <option value="d10">d10</option>
+                    </select>
+                    <input type="number" min="1" max="10" name="attr_character_gunslinger_weapon_damage5">
+                    <button type="roll" value="&{template:default} {{name=Attack}} {{attack=[[@{character_gunslinger_runedice5}]]}} {{name=@{character_gunslinger_rune5}}} {{Damage=@{character_gunslinger_weapon_damage5}}}"></button>
+
+                    <select name="attr_character_gunslinger_runedice6" id="attr_character_gunslinger_runedice6">
+                        <option value="d4">d4</option>
+                        <option value="d6">d6</option>
+                        <option value="d8">d8</option>
+                        <option value="d10">d10</option>
+                    </select>
+                    <input type="number" min="1" max="10" name="attr_character_gunslinger_weapon_damage6">
+                    <button type="roll" value="&{template:default} {{name=Attack}} {{attack=[[@{character_gunslinger_runedice6}]]}} {{name=@{character_gunslinger_rune6}}} {{Damage=@{character_gunslinger_weapon_damage6}}}"></button>
+
+                </div>
+            </div>
+            <div class="arcanist-class-banner">
+                <h3><img src="https://raw.githubusercontent.com/cteuscher/Roll20CharacterSheet/main/slayers/images/label-classarcanist.png"></h3> 
+            </div>
+            <div class="arcanist-class-container">
+
+                    <div class="arcanist-class-bane">
+                        <input type="checkbox" name="attr_bane1">
+                        <input type="checkbox" name="attr_bane2">
+                        <input type="checkbox" name="attr_bane3">
+                        <input type="checkbox" name="attr_bane4">
+                        <input type="checkbox" name="attr_bane5">
+                        <input type="checkbox" name="attr_bane6">
+                    </div>
+
+                    <div class="arcanist-class-spellroll">
+                        <h2>Spell Attack</h2>
+                        <input type="number" min="1" max="10" name="attr_character_arcanist_spell_dicenum">
+                        <select name="attr_character_arcanist_spell_dice" id="attr_character_arcanist_spell_dice">
+                            <option value="d4">d4</option>
+                            <option value="d6">d6</option>
+                            <option value="d8">d8</option>
+                            <option value="d10">d10</option>
+                        </select>
+                        <input type="number" min="1" max="10" name="attr_character_arcanist_spell_damage">
+                        <button type="roll" value="&{template:default} {{name=Attack}} {{attack=[[@{character_arcanist_spell_dicenum}@{character_arcanist_spell_dice}]]}} {{Damage=@{character_arcanist_spell_damage}}}"></button>
+                    </div>
+
+                    <div class="arcanist-class-spellknown">
+                        <textarea name="attr_character_spellsknown" id="attr_character_spellsknown"></textarea>
+                    </div>
+
+                    <div class="arcanist-class-corr">
+                        <input type="checkbox" name="attr_corr1">
+                        <input type="checkbox" name="attr_corr2">
+                        <input type="checkbox" name="attr_corr3">
+                        <input type="checkbox" name="attr_corr4">
+                        <input type="checkbox" name="attr_corr5">
+                        <input type="checkbox" name="attr_corr6">
+                        <input type="checkbox" name="attr_corr7">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--    Notes/bio/equipment-->
+
+
+
+    <div class="sheet-box">
+        <div class="notes-bio-equip-container">
+
+            <div class="notes-banner">
+                <h2>Notes</h2>
+            </div>
+            <div class="notes-text">
+                <textarea name="attr_notes-text" id="notes-text"></textarea>
+            </div>
+
+            <div class="equip-banner">
+                <h2>Equipment</h2>
+            </div>
+            <div class="equip-text">
+                <textarea name="attr_equip-text" id="equip-text"></textarea>
+            </div>
+
+            <div class="bio-banner">
+                <h2>Bio</h2>
+            </div>
+            <div class="bio-text">
+                <textarea name="attr_bio-text" id="bio-text"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
