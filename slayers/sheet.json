@@ -1,0 +1,9 @@
+{
+    "html": "slayer.html",
+    "css": "slayer.css",
+    "authors": "AWeD",
+    "roll20userid": "3180361",
+    "preview": "slayers.png",
+    "instructions": "This is a simple character sheet for the 'Slayers' RPG.",
+    "legacy": true
+  }
