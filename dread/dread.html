@@ -1,0 +1,58 @@
+<div class="dread-logo">
+    <h1><img src="https://raw.githubusercontent.com/cteuscher/Roll20CharacterSheet/main/slayers/images/slayers-logo.png"></h1>
+</div>
+    <div class="sheet-box">
+
+        <div class="name-class-container">
+            <div class="name-box">
+                <p>Character's Name</p>
+                <div class="sheet-character-name">
+                    <input type="text" name="attr_character_name" placeholder="Name">
+                </div>
+            </div>
+
+            <div class="sheet-class-name">
+                <p>Character's Clique</p>
+                <div class="sheet-character-class">
+                    <select name="attr_character_class" placeholder="Class">
+                    <option>Jock</option>
+                    <option>Nerd</option>
+                    <option>Goth</option>
+                    <option>Stoner</option>
+                    <option>Floater</option>
+                    <option>Prep</option>
+                </select>
+                </div>
+
+            </div>
+
+            <div class="sheet-tower">
+                <p>The Tower</p>
+                <div class="sheet-character-tower">
+                    <input type="number" min="0" max="100" name="attr_character_tower_number">
+                    <button type="roll" value="&{template:default} {{name=Jenga Pull}} {{attack=[[@{character_tower_number}-(@{character_tower_number}d6<1)]] remain}}"></button>
+                </div>
+                <p>Pull Denial</p>
+                <input type="checkbox" name="attr_character_pulldenied">
+
+            </div>
+
+            <div class="sheet-reason-notes">
+                <p>Your Notes and Bio</p>
+                <div class="sheet-character-reason">
+                    <textarea name="attr_reason-text" id="reason-text"></textarea>
+                    <textarea name="attr_notes-text" id="notes-text"></textarea>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        
+
+    </div>
+
+
+
+
